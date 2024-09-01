@@ -5,7 +5,10 @@ import LanguageContext from '../../context/LanguageContext';
 export default function BtnSwitch() {
   const { lang, setLang } = useContext(LanguageContext);
   return (
-    <button onClick={() => setLang(lang === 'en' ? 'ru' : 'en')}>
+    <button
+      className={styles.btn}
+      onClick={() => setLang(lang === 'en' ? 'ru' : 'en')}
+    >
       Switch language
     </button>
   );

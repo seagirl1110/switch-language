@@ -5,7 +5,7 @@ import LanguageContext from '../../context/LanguageContext';
 export default function TextComponent() {
   const { lang } = useContext(LanguageContext);
   return (
-    <p>
+    <p className={styles.text}>
       {lang === 'en'
         ? 'English language was choosen'
         : 'Был выбран русский язык'}

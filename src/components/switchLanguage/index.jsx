@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 export default function SwitchLanguage() {
   return (
-    <div>
+    <div className={styles.container}>
       <TextComponent />
       <BtnSwitch />
     </div>
